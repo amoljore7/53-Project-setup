@@ -1,0 +1,15 @@
+@import '../../global-style/index.scss';
+
+$admin-card-wrapper-margin-right: getRem(32px);
+$landing-container-margin-top: getRem(32px);
+$landing-container-margin-left: getRem(56px);
+
+.admin-landing-container {
+  display: flex;
+  margin-top: $landing-container-margin-top;
+  margin-left: $landing-container-margin-left;
+}
+
+.admin-card-wrapper {
+  margin-right: $admin-card-wrapper-margin-right;
+}

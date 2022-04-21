@@ -1,0 +1,22 @@
+@import '../../../../../../global-style/index.scss';
+
+$margin-top-permission-json-container: getRem(48px);
+$margin-left-permission-json-container: getRem(56px);
+$margin-right-permission-json-container: getRem(56px);
+$margin-bottom-permission-json-container: getRem(56px);
+$margin-top-textarea: getRem(8px);
+
+.view-permission-json-container {
+  margin-left: $margin-left-permission-json-container;
+  margin-right: $margin-right-permission-json-container;
+  margin-top: $margin-top-permission-json-container;
+  margin-bottom: $margin-bottom-permission-json-container;
+}
+.view-permission-json-textarea {
+  margin-top: $margin-top-textarea;
+
+  .bds-textarea-box-read-only {
+    background-color: $gray-10 !important;
+    color: $gray-70 !important;
+  }
+}

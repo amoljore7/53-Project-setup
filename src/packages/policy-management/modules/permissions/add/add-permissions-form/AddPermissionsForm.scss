@@ -1,0 +1,31 @@
+@import '../../../../../../global-style/index.scss';
+
+$margin-top-permission-json-container: getRem(48px);
+$margin-left-permission-json-container: getRem(56px);
+$margin-right-permission-json-container: getRem(56px);
+$margin-bottom-permission-json-container: getRem(56px);
+$margin-top-fields: getRem(32px);
+$margin-top-permission-name-loader: getRem(20px);
+$margin-left-permission-name-loader: getRem(16px);
+$permission-consumer-margin-top-8: getRem(8px);
+
+.permission-add-container {
+  font-family: 'OpenSansRegular';
+  margin-left: $margin-left-permission-json-container;
+  margin-right: $margin-right-permission-json-container;
+  margin-top: $margin-top-permission-json-container;
+  margin-bottom: $margin-bottom-permission-json-container;
+}
+.permission-Add-field-top-margin {
+  margin-top: $margin-top-fields;
+}
+.permission-name-loader-wrapper {
+  display: flex;
+  align-items: center;
+}
+.permission-name-loader {
+  margin: $margin-top-permission-name-loader 0 0 $margin-left-permission-name-loader;
+}
+.permission-consumer-margin-top-8 {
+  margin-top: $permission-consumer-margin-top-8;
+}

@@ -1,0 +1,34 @@
+@import '../../../../../global-style/index.scss';
+
+$add-permission-button-container-padding-left: getRem(56px);
+$add-permission-button-container-padding-bottom: getRem(16px);
+$add-permission-button-container-padding-right: getRem(56px);
+$add-permission-save-btn-padding-right: getRem(16px);
+
+.permission-JSON-Form-container {
+  height: calc(100vh - 149px);
+  overflow-y: scroll;
+  @include customScrollbar();
+}
+
+.add-permission-button-container {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background-color: $gray-10 !important;
+  padding-left: $add-permission-button-container-padding-left;
+  padding-bottom: $add-permission-button-container-padding-bottom;
+  padding-right: $add-permission-button-container-padding-right;
+}
+
+.add-permission-save-btn {
+  padding-right: $add-permission-save-btn-padding-right;
+}
+
+.add-permission-left-action {
+  display: flex;
+}
+
+.add-permission-right-action {
+  display: flex;
+}

@@ -1,0 +1,34 @@
+@import '../../../../../global-style/index.scss';
+
+$view-button-container-padding-left: getRem(56px);
+$view-button-container-padding-bottom: getRem(16px);
+$view-button-margin-right: getRem(16px);
+$margin-left-56px: getRem(56px);
+$margin-top-32px: getRem(32px);
+$margin-top-8px: getRem(8px);
+
+.notification-medium-button-container {
+  display: flex;
+  align-items: center;
+  background-color: $gray-10 !important;
+  padding-left: $view-button-container-padding-left;
+  padding-bottom: $view-button-container-padding-bottom;
+  button {
+    margin-right: $view-button-margin-right;
+  }
+}
+.notification-medium-view-data-main-container {
+  height: calc(100vh - 120px);
+  overflow-y: scroll;
+  @include customScrollbar();
+  margin-left: $margin-left-56px;
+  .field-spacing {
+    margin-top: $margin-top-8px;
+  }
+  .field-wrapper {
+    margin-top: $margin-top-32px;
+  }
+}
+.webhook-url-text {
+  color: $link-color;
+}

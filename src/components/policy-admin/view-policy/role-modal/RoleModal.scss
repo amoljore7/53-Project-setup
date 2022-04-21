@@ -1,0 +1,69 @@
+@import '../../../../global-style/index.scss';
+
+$role-view-permission-wrapper-margin-bottom: getRem(32px);
+$role-view-entity-label-wrapper-spacing-margin-bottom: getRem(8px);
+$role-view-value-wrapper-padding-bottom: getRem(4px);
+$role-view-value-wrapper-margin-bottom: getRem(32px);
+$role-view-value-wrapper-margin-top: getRem(8px);
+$role-view-label-wrapper-margin-bottom: getRem(8px);
+$view-policy-pill-container-margin-right: getRem(16px);
+$view-policy-pill-container-margin-bottom: getRem(8px);
+$margin-top-32: getRem(32px);
+$margin-top-8: getRem(8px);
+$margin-top-10: getRem(10px);
+
+.view-role-permission-details-modal-wrapper,
+.view-role-permission-details-layout-modal-wrapper {
+  .role-permission-wrapper {
+    margin-bottom: $role-view-permission-wrapper-margin-bottom;
+  }
+  .add-entity-input-spacing {
+    margin-bottom: $role-view-entity-label-wrapper-spacing-margin-bottom;
+  }
+
+  .add-entity-modal-label {
+    padding-bottom: $role-view-value-wrapper-padding-bottom;
+    color: $gray-80;
+  }
+
+  .view-action-pill {
+    display: flex;
+    flex-wrap: wrap;
+
+    .pill-adjust {
+      padding-right: $view-policy-pill-container-margin-right;
+      padding-bottom: $view-policy-pill-container-margin-bottom;
+    }
+  }
+
+  .action-wrapper-pill {
+    padding-right: $view-policy-pill-container-margin-right;
+    padding-bottom: $view-policy-pill-container-margin-bottom;
+  }
+
+  .add-entity-modal-value {
+    color: $gray-70;
+  }
+  .margin-top-32 {
+    margin-top: $margin-top-32;
+  }
+  .margin-top-8 {
+    margin-top: $margin-top-8;
+  }
+  .margin-top-10 {
+    margin-top: $margin-top-10;
+  }
+  .typography-label-02 {
+    color: $gray-80;
+  }
+  .typography-label-01 {
+    color: $gray-70;
+  }
+  .role-label-modal-container {
+    margin-bottom: $role-view-label-wrapper-margin-bottom;
+  }
+  .role-value-modal-container {
+    margin-bottom: $role-view-value-wrapper-margin-bottom;
+    margin-top: $role-view-value-wrapper-margin-top;
+  }
+}

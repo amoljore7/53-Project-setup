@@ -1,0 +1,15 @@
+@import '../../global-style/index.scss';
+
+$secret-view-spacing-margin-bottom: getRem(32px);
+$secret-view-label-margin-bottom: getRem(8px);
+
+.secret-approval-widget-layout {
+  .secret-approval-widget-spacing:not(:last-child) {
+    margin-bottom: $secret-view-spacing-margin-bottom;
+  }
+
+  .secret-approval-widget-label {
+    margin-bottom: $secret-view-label-margin-bottom;
+    color: $gray-80;
+  }
+}

@@ -1,0 +1,40 @@
+@import '../../../../../global-style/index.scss';
+
+$padding-bottom-create-vault-button: getRem(16px);
+$padding-left-create-vault-button: getRem(56px);
+$padding-left-create-vault-form: getRem(56px);
+$padding-left-cancel-btn: getRem(16px);
+$padding-top-textfield: getRem(32px);
+$padding-top-create-vault-form: getRem(48px);
+$padding-right-snackbar: getRem(56px);
+$margin-top-32: getRem(32px);
+$padding-bottom-8: getRem(8px);
+
+.create-vault-button {
+  font-family: 'OpenSansRegular';
+  display: flex;
+  position: sticky;
+  background-color: $gray-10;
+  padding-bottom: $padding-bottom-create-vault-button;
+  padding-left: $padding-left-create-vault-button;
+}
+.cancel-btn {
+  padding-left: $padding-left-cancel-btn;
+}
+.create-vault-form {
+  font-family: 'OpenSansRegular';
+  overflow-y: scroll;
+  padding-left: $padding-left-create-vault-form;
+  padding-top: $padding-top-create-vault-form;
+  padding-bottom: $padding-top-create-vault-form;
+
+  .textfield-class {
+    padding-top: $padding-top-textfield;
+  }
+}
+.vault-header-class {
+  margin-top: $margin-top-32;
+  margin-right: $padding-right-snackbar;
+  padding-bottom: $padding-bottom-8;
+  border-bottom: 1px solid #a8a8a8;
+}

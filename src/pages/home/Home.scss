@@ -1,0 +1,15 @@
+@import '../../global-style/index.scss';
+
+$home-card-wrapper-margin-right: getRem(32px);
+$landing-container-margin-top: getRem(32px);
+$landing-container-margin-left: getRem(56px);
+
+.home-landing-container {
+  display: flex;
+  margin-top: $landing-container-margin-top;
+  margin-left: $landing-container-margin-left;
+}
+
+.home-card-wrapper {
+  margin-right: $home-card-wrapper-margin-right;
+}

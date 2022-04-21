@@ -1,0 +1,23 @@
+@import '../../../global-style/index.scss';
+
+$my-requests-table-container-padding-top: getRem(48px);
+$my-requests-table-container-padding-right: getRem(56px);
+$action-button-padding-right: getRem(16px);
+$action-button-padding-left: getRem(16px);
+
+@mixin actionButton {
+  display: flex;
+  color: $gray-60;
+  padding-right: $action-button-padding-right;
+}
+
+.my-requests-list-container {
+  height: calc(100vh - 173px);
+  overflow-y: scroll;
+  @include customScrollbar();
+
+  .my-requests-table-container {
+    margin-top: $my-requests-table-container-padding-top;
+    margin-right: $my-requests-table-container-padding-right;
+  }
+}

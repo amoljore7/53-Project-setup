@@ -1,0 +1,9 @@
+@import '../../global-style/index.scss';
+
+$margin-left: getRem(56px);
+$margin-right: getRem(56px);
+
+.form-error-snackbar {
+  margin-left: $margin-left;
+  margin-right: $margin-right;
+}

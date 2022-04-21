@@ -1,0 +1,38 @@
+@import '../../../../../../global-style/index.scss';
+
+$margin-top-permission-view-form-container: getRem(48px);
+$margin-left-permission-view-form-container: getRem(56px);
+$margin-right-permission-view-form-container: getRem(56px);
+$margin-bottom-permission-view-form-container: getRem(56px);
+$margin-top-permission-view-form-fields: getRem(32px);
+$view-permission-margin-top-32: getRem(32px);
+$view-permission-margin-top-8: getRem(8px);
+$view-permission-margin-top-10: getRem(10px);
+$view-permission-pill-container-margin-right: getRem(16px);
+$view-permission-pill-container-margin-bottom: getRem(8px);
+
+.view-permission-form-container {
+  margin-left: $margin-left-permission-view-form-container;
+  margin-right: $margin-right-permission-view-form-container;
+  margin-top: $margin-top-permission-view-form-container;
+  margin-bottom: $margin-bottom-permission-view-form-container;
+}
+
+.view-permission-form-field-tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: $view-permission-margin-top-10;
+}
+.view-permission-action-pill-container {
+  margin-bottom: $view-permission-pill-container-margin-bottom;
+  margin-right: $view-permission-pill-container-margin-right;
+}
+.view-permission-margin-top-32 {
+  margin-top: $view-permission-margin-top-32;
+}
+.view-permission-margin-top-8 {
+  margin-top: $view-permission-margin-top-8;
+}
+.view-permission-margin-top-10 {
+  margin-top: $view-permission-margin-top-10;
+}

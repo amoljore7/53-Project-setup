@@ -1,0 +1,18 @@
+@import '../../../../global-style/index.scss';
+
+$input-json-main-container-padding-top-bottom: getRem(48px);
+$input-json-main-container-padding-left-right: getRem(56px);
+
+.input-json-main-container {
+  padding-top: $input-json-main-container-padding-top-bottom;
+  padding-left: $input-json-main-container-padding-left-right;
+  padding-right: $input-json-main-container-padding-left-right;
+  padding-bottom: $input-json-main-container-padding-top-bottom;
+  overflow-y: auto;
+  @include customScrollbar();
+
+  .bds-textarea-box-read-only {
+    background-color: $gray-10 !important;
+    color: $gray-70 !important;
+  }
+}

@@ -1,0 +1,7 @@
+@import '../../global-style/index.scss';
+
+$margin-top: getRem(8px);
+
+.waiting-approval-widget-field-spacing {
+  margin-top: $margin-top;
+}

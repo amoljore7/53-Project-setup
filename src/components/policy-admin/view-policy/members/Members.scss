@@ -1,0 +1,51 @@
+@import '../../../../global-style/index.scss';
+
+$margin-top-32: getRem(32px);
+$margin-top-8: getRem(8px);
+$padding-bottom-8: getRem(8px);
+$margin-top-10: getRem(10px);
+$view-policy-pill-container-margin-right: getRem(16px);
+$view-policy-pill-container-margin-bottom: getRem(8px);
+$view-tags-wrap-height: getRem(120px);
+$tag-container-min-height: getRem(20px);
+
+.members-header-class {
+  .header-class {
+    margin-top: $margin-top-32;
+    padding-bottom: $padding-bottom-8;
+    border-bottom: 1px solid #a8a8a8;
+
+    .margin-top-32 {
+      margin-top: $margin-top-32;
+    }
+
+    .margin-top-8 {
+      margin-top: $margin-top-8;
+    }
+
+    .margin-top-10 {
+      margin-top: $margin-top-10;
+    }
+  }
+
+  .approval-loader-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .members-tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $margin-top-10;
+    max-height: $view-tags-wrap-height;
+    overflow-y: auto;
+    min-height: $tag-container-min-height;
+    @include customScrollbar();
+
+    .view-member-pills-container {
+      display: inline-block;
+      margin-bottom: $view-policy-pill-container-margin-bottom;
+      margin-right: $view-policy-pill-container-margin-right;
+    }
+  }
+}

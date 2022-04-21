@@ -1,0 +1,99 @@
+@import '../../../../../global-style/index.scss';
+
+$view-button-container-padding-left: getRem(56px);
+$view-button-container-padding-bottom: getRem(16px);
+$view-button-container-padding-right: getRem(56px);
+$padding-right-1rem: getRem(16px);
+$margin-top-32: getRem(32px);
+$margin-top-8: getRem(8px);
+$margin-right-10: getRem(10px);
+$margin-bottom-10: getRem(10px);
+$view-role-pill-container-margin-right: getRem(16px);
+$view-role-pill-container-margin-bottom: getRem(8px);
+$tag-container-height: getRem(10px);
+
+.view-role-outer-wrapper {
+  .view-role-main-container {
+    overflow-y: auto;
+    padding-left: $view-button-container-padding-left;
+    padding-right: $view-button-container-padding-right;
+    margin-top: $margin-top-32;
+    height: calc(100vh - 179px);
+    @include customScrollbar();
+  }
+
+  .button-main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $gray-10 !important;
+    padding-left: $view-button-container-padding-left;
+    padding-right: $view-button-container-padding-right;
+    padding-bottom: $view-button-container-padding-bottom;
+  }
+
+  .margin-top-32 {
+    margin-top: $margin-top-32;
+  }
+  .margin-top-8 {
+    margin-top: $margin-top-8;
+  }
+
+  .child-button-main-container {
+    display: flex;
+    justify-content: space-between;
+    button {
+      margin-right: $margin-right-10;
+    }
+  }
+  .child-button-main-container-read-only {
+    flex-direction: row-reverse;
+  }
+  .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $tag-container-height;
+  }
+  .typography-label-01 {
+    color: $gray-70;
+  }
+  .typography-label-02 {
+    color: $gray-80;
+  }
+
+  .role-render-class {
+    height: 100%;
+    width: 100%;
+    padding-right: $padding-right-1rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .view-role-permission-action-pill-container {
+    margin-bottom: $view-role-pill-container-margin-bottom;
+    margin-right: $view-role-pill-container-margin-right;
+  }
+
+  .view-role-json-textarea {
+    .bds-textarea-box-read-only {
+      background-color: $gray-10 !important;
+      color: $gray-70 !important;
+    }
+  }
+}
+
+.margin-top-32-view-role-policy-details {
+  margin-top: $margin-top-32;
+  color: $gray-80;
+}
+.margin-top-8-view-role-policy-details {
+  margin-top: $margin-top-8;
+  color: $gray-70;
+}
+
+.view-role-permission-action-pill-container-view-role-policy-details {
+  margin-bottom: $view-role-pill-container-margin-bottom;
+  margin-right: $view-role-pill-container-margin-right;
+  display: inline-block;
+}

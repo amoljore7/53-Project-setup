@@ -1,0 +1,59 @@
+@import '../../../../../global-style/index.scss';
+
+$padding-bottom-add-permission-button: getRem(16px);
+$padding-left-add-permission-button: getRem(56px);
+$margin-left-table-listing: getRem(56px);
+$margin-right-table-listing: getRem(56px);
+$margin-top-table-listing: getRem(48px);
+$margin-bottom-table-listing: getRem(48px);
+$action-button-padding-right: getRem(16px);
+$action-button-padding-left: getRem(16px);
+$action-button-size: getRem(24px);
+
+.permission-list-outer-wrapper {
+  .permissions-list-container {
+    height: calc(100vh - 173px);
+    overflow-y: scroll;
+    @include customScrollbar();
+  }
+  .add-permission-button {
+    position: sticky;
+    width: 100%;
+    background-color: $gray-10 !important;
+    padding-bottom: $padding-bottom-add-permission-button;
+    padding-left: $padding-left-add-permission-button;
+  }
+
+  .permissions-table-listing-container {
+    margin-top: $margin-top-table-listing;
+    margin-left: $margin-left-table-listing;
+    margin-right: $margin-right-table-listing;
+    margin-bottom: $margin-bottom-table-listing;
+    .disabled-icon {
+      color: $gray-30;
+    }
+  }
+
+  .permission-action-items {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: $gray-60;
+  }
+  @mixin actionButton {
+    display: flex;
+    padding-right: $action-button-padding-right;
+  }
+  .permission-action-view {
+    @include actionButton;
+    transform: rotate(90deg);
+    padding-left: $action-button-padding-left;
+  }
+  .permission-action-delete {
+    @include actionButton;
+  }
+
+  .permission-action-copy {
+    @include actionButton;
+  }
+}

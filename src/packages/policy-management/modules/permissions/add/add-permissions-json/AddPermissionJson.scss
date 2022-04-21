@@ -1,0 +1,18 @@
+@import '../../../../../../global-style/index.scss';
+
+$margin-top-permission-json-container: getRem(48px);
+$margin-left-permission-json-container: getRem(56px);
+$margin-right-permission-json-container: getRem(56px);
+$margin-bottom-permission-json-container: getRem(56px);
+$margin-top-textarea: getRem(8px);
+
+.permission-json-container {
+  font-family: 'OpenSansRegular';
+  margin-left: $margin-left-permission-json-container;
+  margin-right: $margin-right-permission-json-container;
+  margin-top: $margin-top-permission-json-container;
+  margin-bottom: $margin-bottom-permission-json-container;
+}
+.permission-json-textarea {
+  margin-top: $margin-top-textarea;
+}

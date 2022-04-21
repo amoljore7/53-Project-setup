@@ -1,0 +1,41 @@
+@import '../../../../global-style/index.scss';
+
+$button-wrapper-margin: getRem(8px);
+$add-policy-field-wrapper-margin-bottom: getRem(32px);
+$add-policy-field-value-wrapper-margin-top: getRem(8px);
+$add-permission-button-margin-right: getRem(16px);
+$view-permission-modal-label-padding-bottom: getRem(8px);
+$read-only-consumer-margin-top: getRem(8px);
+$vertical-tab-wrap-margin-left: getRem(56px);
+
+.add-policy-wrapper {
+  display: flex;
+  .form-name-loader-wrapper:not(:last-child) {
+    margin-bottom: $add-policy-field-wrapper-margin-bottom;
+  }
+  .read-only-consumer {
+    margin-top: $read-only-consumer-margin-top;
+  }
+
+  .add-policy-field-wrapper {
+    margin-bottom: $add-policy-field-wrapper-margin-bottom;
+  }
+
+  .add-policy-field-value-wrapper {
+    margin-top: $add-policy-field-value-wrapper-margin-top;
+  }
+
+  .add-permission-buttons-wrapper {
+    display: flex;
+    margin-top: $button-wrapper-margin;
+    margin-bottom: $button-wrapper-margin;
+  }
+
+  .add-permission-button-wrapper {
+    margin-right: $add-permission-button-margin-right;
+  }
+
+  .vertical-tab-wrap {
+    margin-left: $vertical-tab-wrap-margin-left;
+  }
+}

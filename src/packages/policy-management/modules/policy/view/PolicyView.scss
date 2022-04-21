@@ -1,0 +1,168 @@
+@import '../../../../../global-style/index.scss';
+
+$view-button-container-padding-left: getRem(56px);
+$view-button-container-padding-bottom: getRem(16px);
+$view-button-container-padding-right: getRem(56px);
+$padding-right-1rem: getRem(16px);
+$padding-left-1rem: getRem(16px);
+$margin-top-32: getRem(32px);
+$margin-top-8: getRem(8px);
+$margin-right-10: getRem(10px);
+$margin-bottom-10: getRem(10px);
+$margin-top-10: getRem(10px);
+$padding-bottom-8: getRem(8px);
+$view-policy-pill-container-margin-right: getRem(16px);
+$view-policy-pill-container-margin-bottom: getRem(8px);
+$view-tags-wrap-height: getRem(120px);
+$tag-container-min-height: getRem(20px);
+$role-view-permission-wrapper-margin-bottom: getRem(32px);
+$role-view-entity-label-wrapper-spacing-margin-bottom: getRem(8px);
+$role-view-value-wrapper-padding-bottom: getRem(4px);
+$view-action-pill-width: getRem(448px);
+$role-view-value-wrapper-margin-bottom: getRem(32px);
+$role-view-value-wrapper-margin-top: getRem(8px);
+$role-view-label-wrapper-margin-bottom: getRem(8px);
+
+.view-policy-outer-wrapper {
+  .view-policy-main-container {
+    overflow-y: auto;
+    height: calc(100vh - 160px);
+    padding-left: $view-button-container-padding-left;
+    padding-right: $view-button-container-padding-right;
+    @include customScrollbar();
+
+    .policy-render-class {
+      display: flex;
+      height: 100%;
+    }
+    .header-class {
+      margin-top: $margin-top-32;
+      padding-bottom: $padding-bottom-8;
+      border-bottom: 1px solid #a8a8a8;
+    }
+    .margin-top-32 {
+      margin-top: $margin-top-32;
+    }
+    .margin-top-8 {
+      margin-top: $margin-top-8;
+    }
+    .margin-top-10 {
+      margin-top: $margin-top-10;
+    }
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: $margin-top-10;
+      width: 50%;
+      max-height: $view-tags-wrap-height;
+      overflow-y: auto;
+      min-height: $tag-container-min-height;
+      @include customScrollbar();
+    }
+
+    .typography-page-section-header,
+    .typography-label-02 {
+      color: $gray-80;
+    }
+    .typography-label-01 {
+      color: $gray-70;
+    }
+    .bds-textarea-box-read-only {
+      background-color: $gray-10 !important;
+      color: $gray-70 !important;
+    }
+    .add-role-table-permissions {
+      width: 100%;
+      height: 100%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .approval-loader-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .view-policy-permission-action-pill-container {
+    margin-bottom: $view-policy-pill-container-margin-bottom;
+    margin-right: $view-policy-pill-container-margin-right;
+  }
+  .button-main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $gray-10 !important;
+    padding-left: $view-button-container-padding-left;
+    padding-right: $view-button-container-padding-right;
+    padding-bottom: $view-button-container-padding-bottom;
+  }
+  .child-button-main-container {
+    display: flex;
+    justify-content: space-between;
+    button {
+      margin-right: $margin-right-10;
+    }
+  }
+}
+
+.view-role-permission-details-modal-wrapper {
+  .role-permission-wrapper {
+    margin-bottom: $role-view-permission-wrapper-margin-bottom;
+  }
+  .add-entity-input-spacing {
+    margin-bottom: $role-view-entity-label-wrapper-spacing-margin-bottom;
+  }
+
+  .add-entity-modal-label {
+    padding-bottom: $role-view-value-wrapper-padding-bottom;
+    color: $gray-80;
+  }
+
+  .view-action-pill {
+    display: flex;
+    flex-wrap: wrap;
+    width: $view-action-pill-width;
+
+    .pill-adjust {
+      padding-right: $view-policy-pill-container-margin-right;
+      padding-bottom: $view-policy-pill-container-margin-bottom;
+    }
+  }
+
+  .action-wrapper-pill {
+    padding-right: $view-policy-pill-container-margin-right;
+    padding-bottom: $view-policy-pill-container-margin-bottom;
+  }
+
+  .add-entity-modal-value {
+    color: $gray-70;
+  }
+  .margin-top-32 {
+    margin-top: $margin-top-32;
+  }
+  .margin-top-8 {
+    margin-top: $margin-top-8;
+  }
+  .margin-top-10 {
+    margin-top: $margin-top-10;
+  }
+  .typography-label-02 {
+    color: $gray-80;
+  }
+  .typography-label-01 {
+    color: $gray-70;
+  }
+  .view-policy-permission-action-pill-container {
+    display: inline-block;
+    margin-bottom: $view-policy-pill-container-margin-bottom;
+    margin-right: $view-policy-pill-container-margin-right;
+  }
+  .role-label-modal-container {
+    margin-bottom: $role-view-label-wrapper-margin-bottom;
+  }
+  .role-value-modal-container {
+    margin-bottom: $role-view-value-wrapper-margin-bottom;
+    margin-top: $role-view-value-wrapper-margin-top;
+  }
+}

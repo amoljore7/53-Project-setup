@@ -1,0 +1,39 @@
+@import '../../global-style/index.scss';
+
+$date-picker-error-color: $red-60;
+$date-picker-error-border-color: $gray-40;
+$date-wrapper-padding-left-right: getRem(8px);
+$date-wrapper-margin-top: getRem(8px);
+$date-wrapper-border-radius: getRem(3.75px);
+$date-wrapper-font-size: getRem(17px);
+$date-wrapper-border-width: getRem(1px);
+$data-wrapper-border-width: getRem(285px);
+$date-wrapper-height: getRem(40px);
+$date-wrapper-width: getRem(285px);
+
+.sec-mgr-date-picker-wrapper-label {
+  color: $date-picker-error-color;
+}
+
+.sec-mgr-date-picker-wrapper {
+  display: flex;
+  padding-left: $date-wrapper-padding-left-right;
+  padding-right: $date-wrapper-padding-left-right;
+  margin-top: $date-wrapper-margin-top;
+  border-radius: $date-wrapper-border-radius;
+  align-items: center;
+  font-size: $date-wrapper-font-size;
+  border: $date-wrapper-border-width solid $date-picker-error-border-color;
+  justify-content: space-between;
+}
+
+.sec-mgr-date-picker-wrapper.sec-mgr-date-picker-wrapper-error {
+  border: none;
+  border: $date-wrapper-border-width solid $date-picker-error-color;
+}
+.sec-mgr-date-picker-wrapper input {
+  border: none;
+}
+.sec-mgr-date-picker-wrapper input:focus {
+  outline: none;
+}

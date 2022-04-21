@@ -1,0 +1,66 @@
+@import '../../../../../global-style/index.scss';
+
+$padding-bottom-vault-details-button: getRem(16px);
+$padding-left-vault-details-button: getRem(56px);
+$padding-left-vault-details-form: getRem(56px);
+$padding-left-cancel-btn: getRem(16px);
+$padding-top-textfield: getRem(32px);
+$padding-top-vault-details-form: getRem(48px);
+$vault-details-margin-top-32: getRem(32px);
+$vault-details-margin-top-8: getRem(8px);
+$padding-right-snackbar: getRem(56px);
+$margin-top-32: getRem(32px);
+$padding-bottom-8: getRem(8px);
+$view-permission-margin-top-10: getRem(10px);
+$view-permission-pill-container-margin-right: getRem(16px);
+$view-permission-pill-container-margin-bottom: getRem(8px);
+
+.vault-details-button {
+  font-family: 'OpenSansRegular';
+  display: flex;
+  position: sticky;
+  background-color: $gray-10;
+  padding-bottom: $padding-bottom-vault-details-button;
+  padding-left: $padding-left-vault-details-button;
+
+  .cancel-btn {
+    padding-left: $padding-left-cancel-btn;
+  }
+}
+
+.vault-details-form {
+  font-family: 'OpenSansRegular';
+  overflow-y: scroll;
+  padding-left: $padding-left-vault-details-form;
+  padding-top: $padding-top-vault-details-form;
+  padding-bottom: $padding-top-vault-details-form;
+
+  .vault-details-margin-top-32 {
+    margin-top: $vault-details-margin-top-32;
+  }
+  .vault-details-margin-top-8 {
+    margin-top: $vault-details-margin-top-8;
+  }
+  .rotation-message-wrapper {
+    span {
+      color: $red-50;
+    }
+  }
+  .vault-header-class {
+    margin-top: $margin-top-32;
+    margin-right: $padding-right-snackbar;
+    padding-bottom: $padding-bottom-8;
+    border-bottom: 1px solid #a8a8a8;
+  }
+  .view-pill-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: 'space-between';
+    margin-top: $view-permission-margin-top-10;
+  }
+
+  .view-pill-container {
+    margin-bottom: $view-permission-pill-container-margin-bottom;
+    margin-right: $view-permission-pill-container-margin-right;
+  }
+}

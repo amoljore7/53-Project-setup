@@ -1,0 +1,51 @@
+@import '../../global-style/index.scss';
+
+$menu-container-padding-top: getRem(8px);
+$menu-container-padding-bottom: getRem(8px);
+$breadcrumb-wrapper-margin-left: getRem(56px);
+$breadcrumb-wrapper-height: getRem(19px);
+$title-container-padding-left: getRem(56px);
+$title-container-padding-right: getRem(56px);
+$title-container-padding-bottom: getRem(16px);
+$title-container-padding-top: getRem(8px);
+
+.header-container {
+  background-color: $gray-10;
+  position: sticky;
+  top: 0;
+  width: 100%;
+
+  .menu-container {
+    display: flex;
+    padding-top: $menu-container-padding-top;
+    padding-bottom: $menu-container-padding-bottom;
+  }
+
+  .breadcrumb-wrapper {
+    margin-left: $breadcrumb-wrapper-margin-left;
+    height: $breadcrumb-wrapper-height;
+    display: inline;
+  }
+
+  .title-container {
+    display: flex;
+    padding-left: $title-container-padding-left;
+    padding-bottom: $title-container-padding-bottom;
+    color: $gray-80;
+
+    @media screen and (max-width: 768px) {
+      padding-left: $title-container-padding-left;
+      padding-right: $title-container-padding-right;
+    }
+  }
+
+  .title-with-no-breadcrumb {
+    padding-top: $title-container-padding-top;
+  }
+}
+
+.typography-page-title {
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}

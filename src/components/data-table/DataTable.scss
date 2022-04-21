@@ -1,0 +1,51 @@
+@import '../../global-style/index.scss';
+@import '../../global-style/color.scss';
+
+$table-search-input-border-color: $gray-40;
+$table-search-container-left-padding: getRem(8px);
+$table-search-container-right-padding: getRem(8px);
+$table-search-padding-top-bottom: getRem(8px);
+$pagination-size-border-width: getRem(1px);
+$pagination-size-border-color: $gray-40;
+$bottom-panel-border-color: $gray-40;
+$bottom-panel-border-width: getRem(1px);
+$bottom-panel-height: getRem(56px);
+$bottom-panel-padding-top-bottom: getRem(12px);
+
+.vault-data-table-empty {
+  vertical-align: middle;
+}
+
+.vault-data-table-bottom-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: $bottom-panel-border-width solid $bottom-panel-border-color;
+  border-top: none;
+  height: $bottom-panel-height;
+  padding-top: $bottom-panel-padding-top-bottom;
+  padding-bottom: $bottom-panel-padding-top-bottom;
+  box-sizing: border-box;
+}
+
+.no-border {
+  border: none;
+}
+
+.data-table-search-container {
+  border: $pagination-size-border-width solid $pagination-size-border-color;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: $table-search-container-left-padding;
+  padding-right: $table-search-container-right-padding;
+  padding-top: $table-search-padding-top-bottom;
+  padding-bottom: $table-search-padding-top-bottom;
+  border-bottom: none;
+  min-width: getRem(236px);
+  .search-container {
+    border-color: $table-search-input-border-color;
+  }
+  .container {
+    all: unset;
+  }
+}

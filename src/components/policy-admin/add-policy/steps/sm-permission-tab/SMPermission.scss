@@ -1,0 +1,41 @@
+@import '../../../../../global-style/index.scss';
+
+$stepper-main-container-padding-top: getRem(48px);
+$stepper-main-container-padding-bottom: getRem(48px);
+$stepper-main-container-padding-left: getRem(56px);
+$stepper-main-container-padding-right: getRem(32px);
+$form-name-check-loader-margin-top: getRem(20px);
+$form-name-check-loader-margin-bottom: getRem(10px);
+$value-wrapper-margin-top: getRem(10px);
+$add-policy-field-value-wrapper-margin-top: getRem(8px);
+$add-policy-field-wrapper-margin-bottom: getRem(32px);
+
+.sm-policy-permission-tab-main-container {
+  flex-grow: 1;
+  padding-top: $stepper-main-container-padding-top;
+  padding-left: $stepper-main-container-padding-left;
+  padding-bottom: $stepper-main-container-padding-bottom;
+  padding-right: $stepper-main-container-padding-right;
+  overflow: auto;
+  @include customScrollbar();
+  .sm-form-name-loader-wrapper {
+    display: flex;
+    align-items: center;
+
+    .sm-form-name-check-loader {
+      margin-top: $form-name-check-loader-margin-top;
+      margin-left: $form-name-check-loader-margin-bottom;
+    }
+  }
+  .sm-add-policy-field-wrapper {
+    margin-bottom: $add-policy-field-wrapper-margin-bottom;
+  }
+
+  .sm-add-policy-field-value-wrapper {
+    margin-top: $add-policy-field-value-wrapper-margin-top;
+  }
+
+  .sm-value-wrapper {
+    margin-top: $value-wrapper-margin-top;
+  }
+}

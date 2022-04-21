@@ -1,0 +1,54 @@
+@import '../../../../../global-style/index.scss';
+
+$add-role-btn-container-padding-left: getRem(56px);
+$add-role-btn-container-padding-bottom: getRem(16px);
+$roles-table-margin-top: getRem(48px);
+$roles-table-margin-x: getRem(56px);
+$action-button-padding-right: getRem(16px);
+$action-button-padding-left: getRem(16px);
+
+@mixin actionButton {
+  display: flex;
+  padding-right: $action-button-padding-right;
+}
+
+.add-role-btn-container {
+  position: sticky;
+  width: 100%;
+  background-color: $gray-10 !important;
+  padding-left: $add-role-btn-container-padding-left;
+  padding-bottom: $add-role-btn-container-padding-bottom;
+}
+
+.roles-list-container {
+  height: calc(100vh - 173px);
+  overflow-y: scroll;
+  @include customScrollbar();
+}
+
+.roles-table-container {
+  margin: $roles-table-margin-top $roles-table-margin-x 0 $roles-table-margin-x;
+  .roles-table-action-cell {
+    display: flex;
+    justify-content: space-around;
+    color: $gray-60;
+
+    .roles-table-action-edit {
+      @include actionButton;
+      transform: rotate(90deg);
+      padding-left: $action-button-padding-left;
+    }
+
+    .roles-table-action-clone {
+      @include actionButton;
+    }
+
+    .roles-table-action-delete {
+      @include actionButton;
+    }
+
+    .disabled-icon {
+      color: $gray-30;
+    }
+  }
+}

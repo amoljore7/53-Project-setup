@@ -1,0 +1,20 @@
+@import '../../../../../../global-style/index.scss';
+
+$role-json-container-padding-top: getRem(48px);
+$role-json-container-padding-left: getRem(56px);
+$role-json-container-padding-right: getRem(56px);
+$role-json-container-padding-bottom: getRem(48px);
+$role-textarea-container-margin-top: getRem(8px);
+
+.role-json-container {
+  padding-top: $role-json-container-padding-top;
+  padding-left: $role-json-container-padding-left;
+  padding-right: $role-json-container-padding-right;
+  padding-bottom: $role-json-container-padding-bottom;
+  overflow-y: auto;
+  @include customScrollbar();
+
+  .role-textarea-container {
+    margin-top: $role-textarea-container-margin-top;
+  }
+}

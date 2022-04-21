@@ -1,0 +1,38 @@
+@import '../../../../global-style/index.scss';
+
+$landing-container-margin-top: getRem(32px);
+$landing-container-margin-left: getRem(56px);
+$card-wrapper-margin-right: getRem(40px);
+$padding-bottom-back-sys-admin-button: getRem(16px);
+$padding-left-back-sys-admin-button: getRem(56px);
+
+.landing-container {
+  display: flex;
+  margin-top: $landing-container-margin-top;
+  margin-left: $landing-container-margin-left;
+}
+
+.card-wrapper:not(:last-child) {
+  margin-right: $card-wrapper-margin-right;
+}
+
+.back-to-system-administration-button {
+  position: sticky;
+  width: 100%;
+  background-color: $gray-10 !important;
+  padding-bottom: $padding-bottom-back-sys-admin-button;
+  padding-left: $padding-left-back-sys-admin-button;
+}
+
+.no-access-banner {
+  font-family: 'OpenSansRegular';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $gray-80;
+  font-weight: 300;
+  height: calc(100vh - 136px);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}

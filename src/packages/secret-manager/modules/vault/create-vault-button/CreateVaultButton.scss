@@ -1,0 +1,22 @@
+@import '../../../../../global-style/index.scss';
+
+$padding-bottom-create-vault-button: getRem(16px);
+$padding-left-create-vault-button: getRem(56px);
+
+.create-vault-button {
+  font-family: 'OpenSansRegular';
+  display: flex;
+  position: sticky;
+  background-color: $gray-10;
+  padding-bottom: $padding-bottom-create-vault-button;
+  padding-left: $padding-left-create-vault-button;
+}
+.create-vault-page {
+  font-family: 'OpenSansRegular';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $gray-80;
+  font-weight: 300;
+  height: calc(100vh - 136px);
+}

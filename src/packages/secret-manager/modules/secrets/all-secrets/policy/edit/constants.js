@@ -1,0 +1,57 @@
+import { translate } from '../../../../../externalization';
+
+export const translatedStrings = {
+  loadingPolicy: translate('POLICIES_LOADING'),
+  resetEditTitle: translate('POLICIES_MODULE.RESET_EDIT_TITLE'),
+  resetEditMessage: translate('POLICIES_MODULE.RESET_EDIT_MESSAGE'),
+  resetEditPrimaryBtn: translate('POLICIES_MODULE.RESET_EDIT_PRIMARY_BTN'),
+  resetEditSecondaryBtn: translate('POLICIES_MODULE.RESET_EDIT_SECONDARY_BTN'),
+  inlineType: translate('INLINE'),
+  preDefinedType: translate('PRE_DEFINED'),
+  policyUpdateSuccess: translate('POLICIES_MODULE.POLICY_UPDATE_SUCCESS'),
+  editingPolicy: translate('POLICIES_MODULE.EDITING_POLICY'),
+  errorGetRolesList: (reason) => translate('POLICIES_MODULE.ERROR_GET_ROLE_LIST', { reason }),
+  errorGetPermissionsList: (reason) =>
+    translate('POLICIES_MODULE.ERROR_GET_PERMISSION_LIST', { reason }),
+  warningGetRolesList: (reason) => translate('POLICIES_MODULE.WARNING_GET_ROLE_LIST', { reason }),
+  warningGetPermissionsList: (reason) =>
+    translate('POLICIES_MODULE.WARNING_GET_PERMISSION_LIST', { reason }),
+};
+export const EditPolicyType = {
+  EDIT_POLICY_REQUEST: 'EDIT_POLICY_REQUEST',
+  EDIT_POLICY_LOADING: 'EDIT_POLICY_LOADING',
+  EDIT_POLICY_SUCCESS: 'EDIT_POLICY_SUCCESS',
+  EDIT_POLICY_FAILURE: 'EDIT_POLICY_FAILURE',
+};
+
+export const EditNotificationType = {
+  EDIT_OPEN_NOTIFICATION: 'OPEN_NOTIFICATION',
+  EDIT_CLOSE_NOTIFICATION: 'CLOSE_NOTIFICATION',
+};
+
+export const EditConsumerListType = {
+  EDIT_CONSUMER_LIST_REQUEST: 'EDIT_CONSUMER_LIST_REQUEST',
+  EDIT_CONSUMER_LIST_LOADING: 'EDIT_CONSUMER_LIST_LOADING',
+  EDIT_CONSUMER_LIST_SUCCESS: 'EDIT_CONSUMER_LIST_SUCCESS',
+  EDIT_CONSUMER_LIST_FAILURE: 'EDIT_CONSUMER_LIST_FAILURE',
+};
+
+export const EditPermissionActionsType = {
+  EDIT_PERMISSION_ACTIONS_REQUEST: 'EDIT_PERMISSION_ACTIONS_REQUEST',
+  EDIT_PERMISSION_ACTIONS_LOADING: 'EDIT_PERMISSION_ACTIONS_LOADING',
+  EDIT_PERMISSION_ACTIONS_SUCCESS: 'EDIT_PERMISSION_ACTIONS_SUCCESS',
+  EDIT_PERMISSION_ACTIONS_FAILURE: 'EDIT_PERMISSION_ACTIONS_FAILURE',
+  EDIT_PERMISSION_ACTIONS_RESET: 'EDIT_PERMISSION_ACTIONS_RESET',
+};
+
+export const LoadPolicyDataType = {
+  EDIT_LOAD_POLICY_REQUEST: 'EDIT_LOAD_POLICY_REQUEST',
+  EDIT_LOAD_POLICY_LOADING: 'EDIT_LOAD_POLICY_LOADING',
+  EDIT_LOAD_POLICY_SUCCESS: 'EDIT_LOAD_POLICY_SUCCESS',
+  EDIT_LOAD_POLICY_FAILURE: 'EDIT_LOAD_POLICY_FAILURE',
+  OPEN_NOTIFICATION: 'OPEN_NOTIFICATION',
+};
+
+export const dummyDate = '01/01/1970';
+export const dateSearchCharacter = '-';
+export const errorNotificationTime = 3000;

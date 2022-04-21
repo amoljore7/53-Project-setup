@@ -1,0 +1,10 @@
+@import '../../global-style/color.scss';
+
+.global-settings-app-container {
+  margin: -20px -20px 0;
+}
+
+.bds-breadcrumb-item-last a {
+  color: $gray-80 !important;
+  cursor: default;
+}

@@ -1,0 +1,148 @@
+@import '../../../../../../global-style/index.scss';
+
+$role-input-form-container-padding-top: getRem(48px);
+$role-input-form-container-padding-bottom: getRem(48px);
+$role-input-form-container-padding-left: getRem(56px);
+$role-input-form-container-padding-right: getRem(56px);
+$role-input-spacing-margin-bottom: getRem(32px);
+$form-loader-margin-top: getRem(25px);
+$form-loader-margin-left: getRem(16px);
+$add-permission-action-padding-top: getRem(8px);
+$new-permission-space-margin-left: getRem(16px);
+$permission-table-spacing-margin-top: getRem(8px);
+$permission-action-icons-padding-right: getRem(16px);
+$permission-action-edit-padding-left: getRem(16px);
+$permission-action-view-padding-left: getRem(16px);
+$permission-input-spacing-margin-bottom: getRem(32px);
+$form-loader-modal-margin-top: getRem(25px);
+$view-permission-modal-label-padding-bottom: getRem(8px);
+$view-action-pill-width: getRem(448px);
+$pill-adjust-padding-right: getRem(16px);
+$pill-adjust-padding-bottom: getRem(8px);
+$permission-empty-error-margin-top: getRem(1px);
+$margin-top-permission-name-loader: getRem(26px);
+$read-only-consumer-margin-top: getRem(8px);
+
+.role-input-form-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: $role-input-form-container-padding-top;
+  padding-bottom: $role-input-form-container-padding-bottom;
+  padding-left: $role-input-form-container-padding-left;
+  padding-right: $role-input-form-container-padding-right;
+  height: calc(100vh - 149px);
+  overflow-y: auto;
+  @include customScrollbar();
+
+  .role-input-spacing:not(:last-child) {
+    margin-bottom: $role-input-spacing-margin-bottom;
+  }
+
+  .align-with-loader {
+    display: flex;
+    align-items: center;
+
+    .form-loader {
+      margin-top: $form-loader-margin-top;
+      margin-left: $form-loader-margin-left;
+    }
+  }
+
+  .add-permission-action {
+    display: flex;
+    padding-top: $add-permission-action-padding-top;
+
+    .new-permission-space {
+      margin-left: $new-permission-space-margin-left;
+    }
+  }
+
+  .permission-empty-error {
+    margin-top: $permission-empty-error-margin-top;
+    color: $red-60;
+  }
+
+  .permission-table-spacing {
+    margin-top: $permission-table-spacing-margin-top;
+
+    .permission-action-icons {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      @mixin actionButton {
+        display: flex;
+        padding-right: $permission-action-icons-padding-right;
+        color: $gray-60;
+      }
+
+      .permission-action-edit {
+        @include actionButton();
+        padding-left: $permission-action-edit-padding-left;
+      }
+
+      .permission-action-view {
+        @include actionButton();
+        padding-left: $permission-action-view-padding-left;
+      }
+
+      .permission-action-delete {
+        @include actionButton();
+      }
+    }
+  }
+}
+
+.permission-modal-scroll {
+  .permission-input-spacing:not(:last-child) {
+    margin-bottom: $permission-input-spacing-margin-bottom;
+
+    .read-only-consumer {
+      margin-top: $read-only-consumer-margin-top;
+    }
+  }
+
+  .align-with-loader {
+    display: flex;
+    align-items: center;
+
+    .form-loader-modal {
+      margin-top: $form-loader-modal-margin-top;
+    }
+  }
+
+  .permission-data-loader {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+  }
+
+  .view-permission-modal-label {
+    padding-bottom: $view-permission-modal-label-padding-bottom;
+    color: $gray-80;
+  }
+
+  .view-permission-modal-value {
+    color: $gray-70;
+  }
+
+  .view-action-pill {
+    display: flex;
+    flex-wrap: wrap;
+    width: $view-action-pill-width;
+
+    .pill-adjust {
+      padding-right: $pill-adjust-padding-right;
+      padding-bottom: $pill-adjust-padding-bottom;
+    }
+  }
+  .permission-name-field-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .permission-name-loader-container {
+    margin-top: $margin-top-permission-name-loader;
+  }
+}

@@ -1,0 +1,63 @@
+@import '../../../global-style/index.scss';
+
+$my-approvals-table-container-padding-top: getRem(48px);
+$my-approvals-table-container-padding-right: getRem(56px);
+$action-button-padding-right: getRem(16px);
+$action-button-padding-left: getRem(16px);
+
+@mixin actionButton {
+  display: flex;
+  color: $gray-60;
+  padding-right: $action-button-padding-right;
+}
+
+.my-approvals-list-container {
+  height: calc(100vh - 173px);
+  overflow-y: scroll;
+  @include customScrollbar();
+
+  .my-approvals-table-container {
+    margin-top: $my-approvals-table-container-padding-top;
+    margin-right: $my-approvals-table-container-padding-right;
+  }
+
+  .my-approvals-action-items {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .my-approvals-manage-icon {
+      display: flex;
+      transform: rotate(90deg);
+      padding-right: 0;
+
+      :hover {
+        cursor: pointer;
+      }
+    }
+
+    .my-approvals-approve-icon {
+      :hover {
+        cursor: pointer;
+      }
+    }
+
+    .my-approvals-reject-icon {
+      :hover {
+        cursor: pointer;
+      }
+    }
+
+    .my-approvals-action-checked {
+      @include actionButton;
+    }
+    .my-approvals-action-crossed {
+      @include actionButton;
+    }
+    .disabled-icon {
+      @include actionButton;
+      color: $gray-30;
+    }
+  }
+}

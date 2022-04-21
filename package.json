@@ -1,0 +1,70 @@
+{
+  "name": "secret-manager-ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "britive-design-system": "git+https://git-codecommit.us-west-2.amazonaws.com/v1/repos/britive-design-system#develop",
+    "redux-saga": "^1.1.3",
+    "web-vitals": "^1.1.2",
+    "yup": "^0.32.9",
+    "react-icons": "^4.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "rm -rf core && mkdir core && npm run build:copy-assets && npm run build:transpile-utils && npm run build:transpile-packages && npm run build:transpile-components && npm run build:transpile-services && npm run build:transpile-widgets",
+    "build:transpile-utils": "babel src/utils -d core/utils",
+    "build:transpile-packages": "babel src/packages -d core/packages",
+    "build:transpile-components": "babel src/components -d core/components",
+    "build:transpile-services": "babel src/services -d core/services",
+    "build:transpile-widgets": "babel src/common-widgets -d core/common-widgets",
+    "build:copy-assets": "gulp copy:assets",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prepare": "npm run build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.18.0",
+    "babel-plugin-transform-scss": "^1.0.11",
+    "eslint": "^7.30.0",
+    "gulp": "^4.0.2",
+    "history": "^4.9.0",
+    "js-cookie": "^2.2.1",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.27",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-datepicker": "^2.5.0",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^4.0.3",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.9"
+  }
+}
